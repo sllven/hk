@@ -104,15 +104,22 @@
             border-color: var(--accent);
         }
 
-        /* Шапка (Hero) */
-        header {
+        /* Пункт 0 (Заголовок империи) с большим пространством и фото */
+        .header-item-zero {
             max-width: var(--max-width);
             margin: 0 auto;
-            padding: 80px 24px 60px;
+            padding: 120px 24px 90px;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .hero-meta {
+        .zero-layout {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .zero-meta {
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
@@ -122,19 +129,17 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.6rem;
             font-weight: 800;
-            line-height: 1.15;
+            line-height: 1.1;
             letter-spacing: -0.03em;
-            margin-bottom: 20px;
-            max-width: 800px;
+            margin-bottom: 24px;
         }
 
-        .hero-lead {
+        .zero-lead {
             font-size: 1.2rem;
             color: var(--text-muted);
-            max-width: 700px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         /* Основной контейнер */
@@ -146,7 +151,7 @@
 
         /* Секции */
         section {
-            padding: 60px 0;
+            padding: 70px 0;
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -155,11 +160,11 @@
             grid-template-columns: 350px 1fr;
             gap: 40px;
             align-items: start;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.02em;
             color: var(--text-main);
@@ -168,14 +173,14 @@
 
         .section-body {
             display: grid;
-            grid-template-columns: 1fr 340px;
-            gap: 40px;
+            grid-template-columns: 1fr 420px;
+            gap: 50px;
             align-items: start;
         }
 
         /* Зеркальное расположение для 2 и 4 пунктов */
         .section-body.reverse {
-            grid-template-columns: 340px 1fr;
+            grid-template-columns: 420px 1fr;
         }
 
         .section-content {
@@ -183,115 +188,67 @@
         }
 
         .section-content p {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
 
-        /* Место под фотографию */
+        /* Увеличенные места под фотографии */
         .photo-placeholder {
             background-color: #eae5dc;
             border: 2px dashed var(--border-dark);
             border-radius: 4px;
-            padding: 30px 20px;
+            padding: 40px 20px;
             text-align: center;
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 240px;
+            min-height: 360px; /* Увеличено */
         }
 
         .photo-placeholder span {
             display: block;
             font-weight: 600;
             color: var(--text-main);
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
         }
 
-        /* Обычный текст без белых коробочек для списков */
+        /* Текстовые блоки для пунктов без карточек */
         .text-stack {
             display: grid;
-            gap: 16px;
-            margin-top: 15px;
+            gap: 18px;
+            margin-top: 20px;
         }
 
         .text-stack-item p {
             color: var(--text-muted);
-            margin-top: 4px;
+            margin-top: 6px;
         }
 
         .highlight-box {
             background-color: var(--accent-light);
             border-left: 3px solid var(--accent);
-            padding: 20px 24px;
-            margin-bottom: 20px;
+            padding: 22px 26px;
+            margin-bottom: 24px;
             border-radius: 0 4px 4px 0;
         }
 
         .highlight-box p {
             margin: 0;
             color: var(--text-main);
-            font-size: 1rem;
-        }
-
-        /* Ментальная карта / Диаграмма */
-        .visual-card {
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            padding: 24px;
-            border-radius: 6px;
-            margin-top: 20px;
-        }
-
-        .visual-card h4 {
             font-size: 1.05rem;
-            color: var(--accent);
-            margin-bottom: 12px;
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .comparison-col {
-            background: var(--bg-color);
-            padding: 15px;
-            border-radius: 4px;
-        }
-
-        .comparison-col strong {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--text-main);
-        }
-
-        .mindmap-node {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-
-        .mindmap-tag {
-            background: var(--bg-color);
-            border: 1px solid var(--border-dark);
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 0.9rem;
         }
 
         .conclusion-section, .sources-section {
-            padding: 50px 0;
+            padding: 60px 0;
             border-bottom: 1px solid var(--border-color);
         }
 
         .conclusion-section h3, .sources-section h3 {
-            font-size: 1.3rem;
-            margin-bottom: 16px;
+            font-size: 1.4rem;
+            margin-bottom: 18px;
             color: var(--text-main);
         }
 
@@ -311,7 +268,6 @@
             background-color: #1e1b18;
             color: #dcd6cd;
             padding: 50px 0;
-            margin-top: 40px;
             font-size: 0.95rem;
         }
 
@@ -337,6 +293,38 @@
             color: #b8b1a3;
         }
 
+        /* Футер-футеров (Видео практически на весь экран) */
+        .sub-footer-video {
+            background-color: #12100e;
+            padding: 60px 24px;
+            text-align: center;
+            border-top: 1px solid #332f2a;
+        }
+
+        .sub-footer-video h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .video-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #000;
+            border: 1px solid #332f2a;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            max-height: 550px;
+            display: block;
+        }
+
         /* Управление языковыми блоками */
         [data-lang] {
             display: none;
@@ -356,18 +344,15 @@
 
         /* Адаптивность */
         @media (max-width: 900px) {
-            .section-header, .section-body, .section-body.reverse, .footer-container {
+            .zero-layout, .section-header, .section-body, .section-body.reverse, .footer-container {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 25px;
             }
             .nav-center {
                 display: none;
             }
             h1 {
-                font-size: 2.3rem;
-            }
-            .comparison-grid {
-                grid-template-columns: 1fr;
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -416,23 +401,34 @@
         </div>
     </nav>
 
-    <header>
-        <div class="hero-meta">
-            <span data-lang="ru" class="active-lang">Исторический очерк · Центральная Азия</span>
-            <span data-lang="kz">Тарихи очерк · Орталық Азия</span>
-            <span data-lang="en">Historical Essay · Central Asia</span>
+    <!-- ПУНКТ 0: Большой заголовок империи с местом под фото -->
+    <div class="header-item-zero">
+        <div class="zero-layout">
+            <div>
+                <div class="zero-meta">
+                    <span data-lang="ru" class="active-lang">Пункт 0 · Исторический очерк · Центральная Азия</span>
+                    <span data-lang="kz">0-ші тармақ · Тарихи очерк · Орталық Азия</span>
+                    <span data-lang="en">Item 0 · Historical Essay · Central Asia</span>
+                </div>
+                <h1>
+                    <span data-lang="ru" class="active-lang">Цивилизация хунну</span>
+                    <span data-lang="kz">Ғұн өркениеті</span>
+                    <span data-lang="en">The Xiongnu Civilization</span>
+                </h1>
+                <p class="zero-lead">
+                    <span data-lang="ru" class="active-lang">Первая кочевая империя Евразийских степей, создавшая сложнейшую военно-политическую систему и определившая вектор развития кочевого мира во II–I веках до нашей эры, оказав колоссальное влияние на этногенез народов Казахстана и Евразии.</span>
+                    <span data-lang="kz">Еуразия далаларының алғашқы көшпелі империясы, б.з.д. II–I ғасырларда күрделі әскери-саяси жүйе құрып, көшпелі әлемнің даму бағытын айқындады, Қазақстан мен Еуразия халықтарының этногенезіне зор әсер етті.</span>
+                    <span data-lang="en">The first nomadic empire of the Eurasian steppes, which created a complex military-political system and determined the vector of development of the nomadic world in the 2nd-1st centuries BC, exerting a colossal influence on ethnogenesis.</span>
+                </p>
+            </div>
+            <div class="photo-placeholder">
+                <span>📷 Пункт 0 (Фото заголовка)</span>
+                <span data-lang="ru" class="active-lang">Титульная иллюстрация империи хунну</span>
+                <span data-lang="kz">Ғұн империясының титулдық иллюстрациясы</span>
+                <span data-lang="en">Title illustration of the Xiongnu Empire</span>
+            </div>
         </div>
-        <h1>
-            <span data-lang="ru" class="active-lang">Цивилизация хунну</span>
-            <span data-lang="kz">Ғұн өркениеті</span>
-            <span data-lang="en">The Xiongnu Civilization</span>
-        </h1>
-        <p class="hero-lead">
-            <span data-lang="ru" class="active-lang">Первая кочевая империя Евразийских степей, создавшая сложнейшую военно-политическую систему и определившая вектор развития кочевого мира во II–I веках до нашей эры, оказав колоссальное влияние на этногенез народов Казахстана и Евразии.</span>
-            <span data-lang="kz">Еуразия далаларының алғашқы көшпелі империясы, б.з.д. II–I ғасырларда күрделі әскери-саяси жүйе құрып, көшпелі әлемнің даму бағытын айқындады, Қазақстан мен Еуразия халықтарының этногенезіне зор әсер етті.</span>
-            <span data-lang="en">The first nomadic empire of the Eurasian steppes, which created a complex military-political system and determined the vector of development of the nomadic world in the 2nd-1st centuries BC, exerting a colossal influence on ethnogenesis.</span>
-        </p>
-    </header>
+    </div>
 
     <div class="container">
         
@@ -466,11 +462,7 @@
                     </div>
                 </div>
                 <div class="photo-placeholder">
-                    <span>📷 
-                        <span data-lang="ru" class="active-lang">Географическая карта</span>
-                        <span data-lang="kz">Географиялық карта</span>
-                        <span data-lang="en">Geographical Map</span>
-                    </span>
+                    <span>📷 Большое фото 1</span>
                     <span data-lang="ru" class="active-lang">Карта-схема ареала расселения империи хунну и границы ее экспансии во II веке до н.э.</span>
                     <span data-lang="kz">Ғұн империясының таралу аймағы мен оның б.з.д. II ғасырдағы карта-схемасы.</span>
                     <span data-lang="en">Map of the Xiongnu Empire distribution area and its expansion boundaries in the 2nd century BC.</span>
@@ -478,7 +470,7 @@
             </div>
         </section>
 
-        <!-- 2. Правление (Зеркальное расположение: Фото слева, текст справа. Без белых карточек) -->
+        <!-- 2. Правление (Зеркальное расположение, фото слева) -->
         <section id="governance">
             <div class="section-header">
                 <h2>
@@ -494,11 +486,7 @@
             </div>
             <div class="section-body reverse">
                 <div class="photo-placeholder">
-                    <span>📷 
-                        <span data-lang="ru" class="active-lang">Историческая реконструкция</span>
-                        <span data-lang="kz">Тарихи реконструкция</span>
-                        <span data-lang="en">Historical Reconstruction</span>
-                    </span>
+                    <span>📷 Большое фото 2</span>
                     <span data-lang="ru" class="active-lang">Реконструкция ставки шаньюя и структура военного командования.</span>
                     <span data-lang="kz">Шаньюй ордасының реконструкциясы және әскери қолбасшылық құрылымы.</span>
                     <span data-lang="en">Reconstruction of the Chanyu headquarters and military command structure.</span>
@@ -543,32 +531,6 @@
                             <p data-lang="en">The entire empire was simultaneously a mobilization army. Troops were divided into tumens (10,000 warriors each), hundreds, and tens headed by appointed commanders.</p>
                         </div>
                     </div>
-
-                    <!-- Дополнительный сравнительный блок (Диаграмма/Сравнение) -->
-                    <div class="visual-card">
-                        <h4 data-lang="ru" class="active-lang">📊 Сравнение военной тактики: Хунну и Империя Хань</h4>
-                        <h4 data-lang="kz">📊 Әскери тактиканы салыстыру: Ғұндар мен Хань империясы</h4>
-                        <h4 data-lang="en">📊 Military Tactics Comparison: Xiongnu & Han Empire</h4>
-                        <div class="comparison-grid">
-                            <div class="comparison-col">
-                                <strong data-lang="ru" class="active-lang">Хунну (Кочевники)</strong>
-                                <strong data-lang="kz">Ғұндар (Көшпелілер)</strong>
-                                <strong data-lang="en">Xiongnu (Nomads)</strong>
-                                <p data-lang="ru" class="active-lang" style="font-size: 0.9rem; color: var(--text-muted);">Мобильная конница, луки дальнего боя, тактика маневренных ударов и отступлений.</p>
-                                <p data-lang="kz" style="font-size: 0.9rem; color: var(--text-muted);">Мобильді атты әскер, ұзақ қашықтықтағы садақтар, маневрлік соққылар мен шегіну тактикасы.</p>
-                                <p data-lang="en" style="font-size: 0.9rem; color: var(--text-muted);">Mobile cavalry, long-range bows, tactics of maneuverable strikes and retreats.</p>
-                            </div>
-                            <div class="comparison-col">
-                                <strong data-lang="ru" class="active-lang">Империя Хань (Китай)</strong>
-                                <strong data-lang="kz">Хань империясы (Қытай)</strong>
-                                <strong data-lang="en">Han Empire (China)</strong>
-                                <p data-lang="ru" class="active-lang" style="font-size: 0.9rem; color: var(--text-muted);">Массированная пехота, арбалеты, оборонительные стены и гарнизонная система.</p>
-                                <p data-lang="kz" style="font-size: 0.9rem; color: var(--text-muted);">Жаппай жаяу әскер, арбалеттер, қорғаныс қабырғалары және гарнизондық жүйе.</p>
-                                <p data-lang="en" style="font-size: 0.9rem; color: var(--text-muted);">Massed infantry, crossbows, defensive walls, and garrison system.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -606,11 +568,7 @@
                     </div>
                 </div>
                 <div class="photo-placeholder">
-                    <span>📷 
-                        <span data-lang="ru" class="active-lang">Артефакты ремесел</span>
-                        <span data-lang="kz">Қолөнер артефактылары</span>
-                        <span data-lang="en">Craft Artifacts</span>
-                    </span>
+                    <span>📷 Большое фото 3</span>
                     <span data-lang="ru" class="active-lang">Образцы древнего кочевого вооружения, конской упряжи или ремесленных изделий из бронзы.</span>
                     <span data-lang="kz">Ежелгі көшпелі қару-жарақ үлгілері, ат әбзелдері немесе қоладан жасалған қолөнер бұйымдары.</span>
                     <span data-lang="en">Samples of ancient nomadic weaponry, horse harness, or bronze craft products.</span>
@@ -618,7 +576,7 @@
             </div>
         </section>
 
-        <!-- 4. Общество (Зеркальное расположение: Фото слева, текст справа. Без белых карточек. Фото в формате .png) -->
+        <!-- 4. Общество (Зеркальное расположение, фото IMG_6567.png слева) -->
         <section id="society">
             <div class="section-header">
                 <h2>
@@ -634,7 +592,7 @@
             </div>
             <div class="section-body reverse">
                 <div class="photo-placeholder">
-                    <span>IMG_6567.png</span>
+                    <span>📷 IMG_6567.png</span>
                     <span data-lang="ru" class="active-lang">Реконструкция социального быта кочевников или макет традиционного жилища.</span>
                     <span data-lang="kz">Көшпелілердің әлеуметтік тұрмысының реконструкциясы немесе дәстүрлі баспана макеті.</span>
                     <span data-lang="en">Reconstruction of the social life of nomads or a model of a traditional dwelling.</span>
@@ -676,32 +634,13 @@
                             <p data-lang="en">War prisoners and impoverished fellow tribesmen involved in domestic labor and servicing elite farms.</p>
                         </div>
                     </div>
-
-                    <!-- Ментальная карта общества хунну -->
-                    <div class="visual-card">
-                        <h4 data-lang="ru" class="active-lang">🧠 Ментальная карта: Социальная иерархия хунну</h4>
-                        <h4 data-lang="kz">🧠 Ментальді карта: Ғұндардың әлеуметтік иерархиясы</h4>
-                        <h4 data-lang="en">🧠 Mind Map: Xiongnu Social Hierarchy</h4>
-                        <div class="mindmap-node">
-                            <div class="mindmap-tag" data-lang="ru" class="active-lang">👑 Шаньюй (Верховный правитель)</div>
-                            <div class="mindmap-tag" data-lang="kz">👑 Шаньюй (Жоғарғы билеуші)</div>
-                            <div class="mindmap-tag" data-lang="en">👑 Chanyu (Supreme Ruler)</div>
-
-                            <div class="mindmap-tag" data-lang="ru" class="active-lang">⚔️ Родовая знать (Клан Хуюй)</div>
-                            <div class="mindmap-tag" data-lang="kz">⚔️ Рулық ақсүйектер</div>
-                            <div class="mindmap-tag" data-lang="en">⚔️ Tribal Nobility</div>
-
-                            <div class="mindmap-tag" data-lang="ru" class="active-lang">🛡️ Свободные скотоводы (Воины)</div>
-                            <div class="mindmap-tag" data-lang="kz">🛡️ Еркін малшылар (Жауынгерлер)</div>
-                            <div class="mindmap-tag" data-lang="en">🛡️ Free Herders (Warriors)</div>
-
-                            <div class="mindmap-tag" data-lang="ru" class="active-lang">⛓️ Зависимые люди / Пленники</div>
-                            <div class="mindmap-tag" data-lang="kz">⛓️ Тәуелді адамдар / Тұтқындар</div>
-                            <div class="mindmap-tag" data-lang="en">⛓️ Dependent People / Captives</div>
-                        </div>
-                    </div>
-
                 </div>
+            </div>
+            <!-- Текст снизу на случай если фотография закончилась -->
+            <div style="margin-top: 35px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                <span data-lang="ru" class="active-lang">Дополнительные сведения: социальная иерархия у хунну регулировалась неписаными обычаями кочевого права, где личная преданность вождю и военная доблесть ценились выше простого происхождения.</span>
+                <span data-lang="kz">Қосымша мәліметтер: ғұндардың әлеуметтік иерархиясы көшпелі құқықтың жазылмаған әдет-ғұрыптарымен реттелді, мұнда көшбасшыға деген жеке адалдық пен әскери ерлік жоғары бағаланды.</span>
+                <span data-lang="en">Additional details: the social hierarchy among the Xiongnu was regulated by unwritten customs of nomadic law, where personal loyalty to the leader and military prowess were valued above simple origin.</span>
             </div>
         </section>
 
@@ -738,11 +677,7 @@
                     </div>
                 </div>
                 <div class="photo-placeholder">
-                    <span>📷 
-                        <span data-lang="ru" class="active-lang">Артефакты культуры</span>
-                        <span data-lang="kz">Мәдени артефактылар</span>
-                        <span data-lang="en">Cultural Artifacts</span>
-                    </span>
+                    <span>📷 Большое фото 5</span>
                     <span data-lang="ru" class="active-lang">Находки из Ноин-Улинских курганов: золотые украшения в зверином стиле или древние ткани.</span>
                     <span data-lang="kz">Ноин-Ула қорғандарының олжалары: аң стиліндегі алтын әшекейлер немесе көне маталар.</span>
                     <span data-lang="en">Finds from the Noin-Ula kurgans: gold jewelry in animal style or ancient fabrics.</span>
@@ -781,6 +716,7 @@
 
     </div>
 
+    <!-- Основной футер -->
     <footer>
         <div class="footer-container">
             <div class="footer-project">
@@ -811,6 +747,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- ФУТТЕР-ФУТТЕРОВ: Видео на почти весь экран с включением по нажатию -->
+    <div class="sub-footer-video">
+        <h3>
+            <span data-lang="ru" class="active-lang">Видеопрезентация проекта (Нажмите для воспроизведения)</span>
+            <span data-lang="kz">Жобаның бейнепрезентациясы (Ойнату үшін басыңыз)</span>
+            <span data-lang="en">Project Video Presentation (Click to Play)</span>
+        </h3>
+        <div class="video-container">
+            <!-- Укажите путь к вашему видеофайлу вместо video.mp4 в атрибуте src -->
+            <video controls preload="metadata">
+                <source src="video.mp4" type="video/mp4">
+                <span data-lang="ru" class="active-lang">Ваш браузер не поддерживает элемент video.</span>
+                <span data-lang="kz">Сіздің браузеріңіз video элементін қолдамайды.</span>
+                <span data-lang="en">Your browser does not support the video tag.</span>
+            </video>
+        </div>
+    </div>
 
     <script>
         function setLanguage(lang) {
