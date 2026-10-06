@@ -191,25 +191,23 @@
             margin-bottom: 14px;
         }
 
-        /* Контейнер для реальных фотографий */
+        /* Контейнер для реальных фотографий (адаптивный по размеру картинки) */
         .photo-container {
             background-color: #eae5dc;
             border: 1px solid var(--border-dark);
             border-radius: 4px;
             overflow: hidden;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 360px;
+            width: 100%;
         }
 
         .photo-container img {
             width: 100%;
             height: auto;
-            max-height: 480px;
-            object-fit: cover;
             display: block;
+            object-fit: contain;
         }
 
         /* Списки и текстовые стеки */
@@ -348,7 +346,7 @@
             display: block;
         }
 
-        /* Логика отображения языков (активен только выбранный) */
+        /* Логика отображения языков */
         .lang-content {
             display: none;
         }
@@ -443,7 +441,7 @@
 
     <div class="container">
         
-        <!-- 1. Территория и расселение (6 этапов) -->
+        <!-- 1. Территория и расселение (6 этапов, строго по языкам) -->
         <section id="territory">
             <div class="section-header">
                 <h2>
@@ -461,52 +459,93 @@
                 <div class="section-content">
                     <div class="text-stack">
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">1. Формирование державы хунну (IV–III вв. до н. э.)</strong>
-                            <strong class="lang-content" data-lang="kz">1. Ғұн державасының қалыптасуы (б.з.д. IV–III ғғ.)</strong>
-                            <strong class="lang-content" data-lang="en">1. Formation of the Xiongnu power (IV–III centuries BC)</strong>
-                            <p class="lang-content active-lang" data-lang="ru">Хунну — скотоводческий народ, создавший в конце I тыс. до н. э. — начале I тыс. н. э. первую в Центральной Азии мощную кочевую империю. Под властью хунну была огромная территория: от Забайкалья на севере до Тибета на юге, от Восточного Туркестана на западе до среднего течения реки Хуанхэ. В IV–III вв. до н. э. китайцы называли их «северными варварами ху». К середине III в. до н. э. хунну подчинили соседние племена и начали совершать набеги на Китай. Во главе с шаньюем Модэ (206–174 гг. до н. э.) они одержали ряд побед и расселились на обширном пространстве (Монголия, Забайкалье, Тува).</p>
-                            <p class="lang-content" data-lang="kz">Ғұндар — б.з.д. I мыңжылдықтың соңында — б.з. I мыңжылдығының басында Орталық Азиядағы алғашқы қуатты көшпелі империяны құрған малшы халық. Модэ шаньюйдің (б.з.д. 206–174 жж.) басшылығымен олар бірқатар жеңіске жетіп, кең алқапқа қоныстанды.</p>
-                            <p class="lang-content" data-lang="en">The Xiongnu were a pastoral people who created the first powerful nomadic empire in Central Asia at the end of the 1st millennium BC.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>1. Формирование державы хунну (IV–III вв. до н. э.)</strong>
+                                <p>Хунну — скотоводческий народ, создавший в конце I тыс. до н. э. — начале I тыс. н. э. первую в Центральной Азии мощную кочевую империю. Под властью хунну была огромная территория: от Забайкалья на севере до Тибета на юге, от Восточного Туркестана на западе до среднего течения реки Хуанхэ. В IV–III вв. до н. э. китайцы называли их «северными варварами ху». К середине III в. до н. э. хунну подчинили соседние племена и начали совершать набеги на Китай. Во главе с шаньюем Модэ (206–174 гг. до н. э.) они одержали ряд побед и расселились на обширном пространстве (Монголия, Забайкалье, Тува).</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>1. Ғұн державасының қалыптасуы (б.з.д. IV–III ғғ.)</strong>
+                                <p>Ғұндар — б.з.д. I мыңжылдықтың соңында — б.з. I мыңжылдығының басында Орталық Азиядағы алғашқы қуатты көшпелі империяны құрған малшы халық. Модэ шаньюйдің (б.з.д. 206–174 жж.) басшылығымен олар бірқатар жеңіске жетіп, кең алқапқа қоныстанды.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>1. Formation of the Xiongnu power (IV–III centuries BC)</strong>
+                                <p>The Xiongnu were a pastoral people who created the first powerful nomadic empire in Central Asia at the end of the 1st millennium BC.</p>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">2. Расцвет и войны с Китаем (II–I вв. до н. э.)</strong>
-                            <strong class="lang-content" data-lang="kz">2. Өрлеу және Қытаймен соғыстар (б.з.д. II–I ғғ.)</strong>
-                            <strong class="lang-content" data-lang="en">2. Prosperity and wars with China (II–I centuries BC)</strong>
-                            <p class="lang-content active-lang" data-lang="ru">В 200–133 гг. до н. э. хунну продолжали борьбу с юэчжами, совершали набеги на Китай, вымогали подарки и вели мирную торговлю. В 129–58 гг. до н. э. шла длительная война хунну и Хань, которая обескровила обе стороны.</p>
-                            <p class="lang-content" data-lang="kz">б.з.д. 200–133 жылдары ғұндар юэчжилермен күресін жалғастырды, Қытайға шабуыл жасады және бейбіт сауда жүргізді. б.з.д. 129–58 жылдары ұзақ соғыс жүрді.</p>
-                            <p class="lang-content" data-lang="en">In 200–133 BC, the Xiongnu continued their struggle with the Yuezhi, raided China, and traded. From 129–58 BC a long war between the Xiongnu and Han took place.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>2. Расцвет и войны с Китаем (II–I вв. до н. э.)</strong>
+                                <p>В 200–133 гг. до н. э. хунну продолжали борьбу с юэчжами, совершали набеги на Китай, вымогали подарки и вели мирную торговлю. В 129–58 гг. до н. э. шла длительная война хунну и Хань, которая обескровила обе стороны.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>2. Өрлеу және Қытаймен соғыстар (б.з.д. II–I ғғ.)</strong>
+                                <p>б.з.д. 200–133 жылдары ғұндар юэчжилермен күресін жалғастырды, Қытайға шабуыл жасады және бейбіт сауда жүргізді. б.з.д. 129–58 жылдары ұзақ соғыс жүрді.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>2. Prosperity and wars with China (II–I centuries BC)</strong>
+                                <p>In 200–133 BC, the Xiongnu continued their struggle with the Yuezhi, raided China, and traded. From 129–58 BC a long war between the Xiongnu and Han took place.</p>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">3. Распад на северных и южных хунну (55 г. до н. э. — 48 г. н. э.)</strong>
-                            <strong class="lang-content" data-lang="kz">3. Солтүстік және оңтүстік ғұндар болып бөлінуі (б.з.д. 55 ж. — б.з. 48 ж.)</strong>
-                            <strong class="lang-content" data-lang="en">3. Split into Northern and Southern Xiongnu (55 BC — 48 AD)</strong>
-                            <p class="lang-content active-lang" data-lang="ru">В 55 г. до н. э. хуннская держава разделилась на южных и северных хунну. Южные хунну попали под покровительство Китая. Северные хунну во главе с Чжичжи-шаньюем ушли в северо-западную Монголию, затем в Среднюю Азию и Джунгарию, чтобы сохранить независимую державу.</p>
-                            <p class="lang-content" data-lang="kz">б.з.д. 55 жылы ғұн державасы оңтүстік және солтүстік ғұндар болып бөлінді. Оңтүстік ғұндар Қытайдың қамқорлығына өтті. Солтүстік ғұндар тәуелсіздікті сақтау үшін Солтүстік-Батыс Моңғолия мен Орталық Азияға кетті.</p>
-                            <p class="lang-content" data-lang="en">In 55 BC the Xiongnu state split into southern and northern branches. Southern Xiongnu accepted Chinese protection, while Northern Xiongnu moved to preserve independence.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>3. Распад на северных и южных хунну (55 г. до н. э. — 48 г. н. э.)</strong>
+                                <p>В 55 г. до н. э. хуннская держава разделилась на южных и северных хунну. Южные хунну попали под покровительство Китая. Северные хунну во главе с Чжичжи-шаньюем ушли в северо-западную Монголию, затем в Среднюю Азию и Джунгарию, чтобы сохранить независимую державу.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>3. Солтүстік және оңтүстік ғұндар болып бөлінуі (б.з.д. 55 ж. — б.з. 48 ж.)</strong>
+                                <p>б.з.д. 55 жылы ғұн державасы оңтүстік және солтүстік ғұндар болып бөлінді. Оңтүстік ғұндар Қытайдың қамқорлығына өтті. Солтүстік ғұндар тәуелсіздікті сақтау үшін Солтүстік-Батыс Моңғолия мен Орталық Азияға кетті.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>3. Split into Northern and Southern Xiongnu (55 BC — 48 AD)</strong>
+                                <p>In 55 BC the Xiongnu state split into southern and northern branches. Southern Xiongnu accepted Chinese protection, while Northern Xiongnu moved to preserve independence.</p>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">4. Уход северных хунну на запад (93 г. н. э.)</strong>
-                            <strong class="lang-content" data-lang="kz">4. Солтүстік ғұндардың батысқа кетуі (б.з. 93 ж.)</strong>
-                            <strong class="lang-content" data-lang="en">4. Migration of Northern Xiongnu to the West (93 AD)</strong>
-                            <p class="lang-content active-lang" data-lang="ru">В 93 г. н. э. северные хунну, после поражений от сяньбийских и китайских войск, ушли на запад — в Джунгарию, затем в Восточный Казахстан, к Уралу, Волге. Часть северных хунну позже стала предками гуннов.</p>
-                            <p class="lang-content" data-lang="kz">б.з. 93 жылы солтүстік ғұндар батысқа — Жетісуға, Шығыс Қазақстанға, Орал мен Еділ бойына кетті. Олардың бір бөлігі IV–V ғасырларда Еуропада пайда болған ғұндардың арғы атасына айналды.</p>
-                            <p class="lang-content" data-lang="en">In 93 AD, Northern Xiongnu moved west to Dzungaria, Eastern Kazakhstan, the Urals, and the Volga, later becoming ancestors of the Huns.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>4. Уход северных хунну на запад (93 г. н. э.)</strong>
+                                <p>В 93 г. н. э. северные хунну, после поражений от сяньбийских и китайских войск, ушли на запад — в Джунгарию, затем в Восточный Казахстан, к Уралу, Волге. Часть северных хунну позже стала предками гуннов.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>4. Солтүстік ғұндардың батысқа кетуі (б.з. 93 ж.)</strong>
+                                <p>б.з. 93 жылы солтүстік ғұндар батысқа — Жетісуға, Шығыс Қазақстанға, Орал мен Еділ бойына кетті. Олардың бір бөлігі IV–V ғасырларда Еуропада пайда болған ғұндардың арғы атасына айналды.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>4. Migration of Northern Xiongnu to the West (93 AD)</strong>
+                                <p>In 93 AD, Northern Xiongnu moved west to Dzungaria, Eastern Kazakhstan, the Urals, and the Volga, later becoming ancestors of the Huns.</p>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">5. Южные хунну в Китае (I–III вв. н. э.)</strong>
-                            <strong class="lang-content" data-lang="kz">5. Қытайдағы оңтүстік ғұндар (б.з. I–III ғғ.)</strong>
-                            <strong class="lang-content" data-lang="en">5. Southern Xiongnu in China (I–III centuries AD)</strong>
-                            <p class="lang-content active-lang" data-lang="ru">Южные хунну просуществовали под протекторатом Китая до начала III в. н. э. Позже их потомки создали на территории Китая государства: Северная Хань (304–319), Раннее Чжао (318–329), Позднее Чжао (319–351).</p>
-                            <p class="lang-content" data-lang="kz">Оңтүстік ғұндар Қытайдың протектораты астында б.з. III ғасырдың басына дейін өмір сүрді. Кейін олардың ұрпақтары Қытай аумағында мемлекеттер құрды.</p>
-                            <p class="lang-content" data-lang="en">Southern Xiongnu existed under China's protectorate until the early 3rd century AD, later establishing states within China.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>5. Южные хунну в Китае (I–III вв. н. э.)</strong>
+                                <p>Южные хунну просуществовали под протекторатом Китая до начала III в. н. э. Позже их потомки создали на территории Китая государства: Северная Хань (304–319), Раннее Чжао (318–329), Позднее Чжао (319–351).</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>5. Қытайдағы оңтүстік ғұндар (б.з. I–III ғғ.)</strong>
+                                <p>Оңтүстік ғұндар Қытайдың протектораты астында б.з. III ғасырдың басына дейін өмір сүрді. Кейін олардың ұрпақтары Қытай аумағында мемлекеттер құрды.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>5. Southern Xiongnu in China (I–III centuries AD)</strong>
+                                <p>Southern Xiongnu existed under China's protectorate until the early 3rd century AD, later establishing states within China.</p>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">6. Исчезновение как единой силы (IV–V вв. н. э.)</strong>
-                            <strong class="lang-content" data-lang="kz">6. Біртұтас күш ретінде жойылуы (б.з. IV–V ғғ.)</strong>
-                            <strong class="lang-content" data-lang="en">6. Disappearance as a single force (IV–V centuries AD)</strong>
-                            <p class="lang-content active-lang" data-lang="ru">К середине I в. н. э. распад хуннской державы стал необратимым. К IV–V вв. н. э. хунну как единый народ исчезли, часть вошла в состав других кочевых союзов (гунны, тюрки и др.).</p>
-                            <p class="lang-content" data-lang="kz">б.з. I ғасырдың ортасына қарай ғұн державасының ыдырауы түпкілікті болды. IV–V ғасырларда ғұндар біртұтас халық ретінде жоғалып, басқа көшпелі одақтардың құрамына енді.</p>
-                            <p class="lang-content" data-lang="en">By the mid-1st century AD, the disintegration of the Xiongnu power became irreversible. By the 4th-5th centuries AD, they disappeared as a single people.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>6. Исчезновение как единой силы (IV–V вв. н. э.)</strong>
+                                <p>К середине I в. н. э. распад хуннской державы стал необратимым. К IV–V вв. н. э. хунну как единый народ исчезли, часть вошла в состав других кочевых союзов (гунны, тюрки и др.).</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>6. Біртұтас күш ретінде жойылуы (б.з. IV–V ғғ.)</strong>
+                                <p>б.з. I ғасырдың ортасына қарай ғұн державасының ыдырауы түпкілікті болды. IV–V ғасырларда ғұндар біртұтас халық ретінде жоғалып, басқа көшпелі одақтардың құрамына енді.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>6. Disappearance as a single force (IV–V centuries AD)</strong>
+                                <p>By the mid-1st century AD, the disintegration of the Xiongnu power became irreversible. By the 4th-5th centuries AD, they disappeared as a single people.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -516,7 +555,7 @@
             </div>
         </section>
 
-        <!-- 2. Правление (Зеркальное расположение, фото слева) -->
+        <!-- 2. Правление -->
         <section id="governance">
             <div class="section-header">
                 <h2>
@@ -547,30 +586,33 @@
 
                     <div class="highlight-box">
                         <p>
-                            <strong class="lang-content active-lang" data-lang="ru">Принцип престолонаследия:</strong>
-                            <strong class="lang-content" data-lang="kz">Тақты мұрагерлікпен алу принципі:</strong>
-                            <strong class="lang-content" data-lang="en">Principle of succession:</strong>
-                            <span class="lang-content active-lang" data-lang="ru">Власть передавалась внутри правящего клана, как правило, по старшинству в боковых ветвях рода, что минимизировало риск прихода к власти малолетних наследников.</span>
-                            <span class="lang-content" data-lang="kz">Билік билеуші кланның ішінде, әдетте, әулеттің бүйір тармақтарындағы үлкендік бойынша берілді.</span>
-                            <span class="lang-content" data-lang="en">Power was transferred within the ruling clan, as a rule, by seniority in collateral branches.</span>
+                            <span class="lang-content active-lang" data-lang="ru"><strong>Принцип престолонаследия:</strong> Власть передавалась внутри правящего клана, как правило, по старшинству в боковых ветвях рода, что минимизировало риск прихода к власти малолетних наследников.</span>
+                            <span class="lang-content" data-lang="kz"><strong>Тақты мұрагерлікпен алу принципі:</strong> Билік билеуші кланның ішінде, әдетте, әулеттің бүйір тармақтарындағы үлкендік бойынша берілді.</span>
+                            <span class="lang-content" data-lang="en"><strong>Principle of succession:</strong> Power was transferred within the ruling clan, as a rule, by seniority in collateral branches.</span>
                         </p>
                     </div>
 
                     <div class="text-stack">
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">Административно-территориальное деление:</strong>
-                            <strong class="lang-content" data-lang="kz">Әкімшілік-аумақтық бөлініс:</strong>
-                            <strong class="lang-content" data-lang="en">Administrative-territorial division:</strong>
-                            <p class="lang-content active-lang" data-lang="ru">Территория империи делилась на три крыла: восточное, западное и центральное, каждое из которых управлялось высшими сановниками.</p>
-                            <p class="lang-content" data-lang="kz">Империя аумағы үш қанатқа бөлінді: шығыс, батыс және орталық.</p>
-                            <p class="lang-content" data-lang="en">The territory of the empire was divided into three wings: eastern, western, and central.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>Административно-территориальное деление:</strong>
+                                <p>Территория империи делилась на три крыла: восточное, западное и центральное, каждое из которых управлялось высшими сановниками.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>Әкімшілік-аумақтық бөлініс:</strong>
+                                <p>Империя аумағы үш қанатқа бөлінді: шығыс, батыс және орталық.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>Administrative-territorial division:</strong>
+                                <p>The territory of the empire was divided into three wings: eastern, western, and central.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Хозяйственная деятельность (Вывод перенесен под фото) -->
+        <!-- 3. Особенности хозяйственной деятельности (Фото IMG_6573.png, вывод под фото) -->
         <section id="economy">
             <div class="section-header">
                 <h2>
@@ -594,52 +636,89 @@
 
                     <div class="text-stack">
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">1. Скотоводство</strong>
-                            <strong class="lang-content" data-lang="kz">1. Мал шаруашылығы</strong>
-                            <strong class="lang-content" data-lang="en">1. Cattle breeding</strong>
-                            <ul>
-                                <li>Основным занятием хуннов было кочевое скотоводство. Разводили лошадей, овец, крупный рогатый скот и верблюдов.</li>
-                                <li>Лошади имели большое значение для передвижения и военных походов. Хунны кочевали в зависимости от сезона.</li>
-                            </ul>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>1. Скотоводство</strong>
+                                <ul>
+                                    <li>Основным занятием хуннов было кочевое скотоводство. Разводили лошадей, овец, крупный рогатый скот и верблюдов.</li>
+                                    <li>Лошади имели большое значение для передвижения и военных походов. Хунны кочевали в зависимости от сезона.</li>
+                                </ul>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>1. Мал шаруашылығы</strong>
+                                <ul>
+                                    <li>Ғұндардың негізгі кәсібі көшпелі мал шаруашылығы болды. Жылқы, қой, ірі қара және түйе өсірді.</li>
+                                    <li>Жылқылар көшу мен әскери жорықтар үшін үлкен маңызға ие болды.</li>
+                                </ul>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>1. Cattle breeding</strong>
+                                <ul>
+                                    <li>The main occupation of the Xiongnu was nomadic cattle breeding, raising horses, sheep, cattle, and camels.</li>
+                                    <li>Horses were of great importance for movement and military campaigns.</li>
+                                </ul>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">2. Земледелие</strong>
-                            <strong class="lang-content" data-lang="kz">2. Егіншілік</strong>
-                            <strong class="lang-content" data-lang="en">2. Agriculture</strong>
-                            <ul>
-                                <li>В подходящих районах хунны занимались земледелием, выращивая просо и пшеницу для питания населения.</li>
-                            </ul>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>2. Земледелие</strong>
+                                <ul>
+                                    <li>В подходящих районах хунны занимались земледелием, выращивая просо и пшеницу для питания населения.</li>
+                                </ul>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>2. Егіншілік</strong>
+                                <ul>
+                                    <li>Қолайлы аймақтарда ғұндар егіншілікпен айналысып, тары мен бидай өсірді.</li>
+                                </ul>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>2. Agriculture</strong>
+                                <ul>
+                                    <li>In suitable areas, the Xiongnu engaged in agriculture, growing millet and wheat.</li>
+                                </ul>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">3. Охота, рыболовство и ремесло</strong>
-                            <strong class="lang-content" data-lang="kz">3. Аңшылық, балық аулау және қолөнер</strong>
-                            <strong class="lang-content" data-lang="en">3. Hunting, fishing and crafts</strong>
-                            <ul>
-                                <li>Охота давала мясо и меха. Хунну мастерски обрабатывали металл, кожу и дерево, изготавливая оружие и упряжь.</li>
-                            </ul>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>3. Охота, рыболовство и ремесло</strong>
+                                <ul>
+                                    <li>Охота давала мясо и меха. Хунну мастерски обрабатывали металл, кожу и дерево, изготавливая оружие и упряжь.</li>
+                                </ul>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>3. Аңшылық, балық аулау және қолөнер</strong>
+                                <ul>
+                                    <li>Аңшылық ет пен тері берді. Ғұндар металл, тері мен ағашты өңдеп, қару-жарақ жасады.</li>
+                                </ul>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>3. Hunting, fishing and crafts</strong>
+                                <ul>
+                                    <li>Hunting provided meat and furs. The Xiongnu masterfully processed metal, leather, and wood.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="photo-container">
-                    <img src="economy.jpg" alt="Хозяйство хунну">
+                    <img src="IMG_6573.png" alt="Хозяйство хунну">
                 </div>
             </div>
-            <!-- Вывод перенесен под фото -->
+            <!-- Вывод под фото -->
             <div style="margin-top: 35px;">
                 <div class="highlight-box">
                     <p>
-                        <strong class="lang-content active-lang" data-lang="ru">Вывод:</strong>
-                        <strong class="lang-content" data-lang="kz">Қорытынды:</strong>
-                        <strong class="lang-content" data-lang="en">Conclusion:</strong>
-                        <span class="lang-content active-lang" data-lang="ru">Хозяйство хуннов было преимущественно кочевым и основывалось на скотоводстве. При этом они занимались земледелием, охотой, ремеслом и торговлей. Военные походы и обмен с соседними государствами также имели большое значение для их экономики.</span>
-                        <span class="lang-content" data-lang="kz">Ғұндардың шаруашылығы негізінен көшпелі болды және мал шаруашылығына негізделді. Сонымен қатар олар егіншілікпен, аңшылықпен, қолөнермен және саудамен айналысты.</span>
-                        <span class="lang-content" data-lang="en">The Xiongnu economy was predominantly nomadic and based on cattle breeding, supplemented by agriculture, crafts, and trade.</span>
+                        <span class="lang-content active-lang" data-lang="ru"><strong>Вывод:</strong> Хозяйство хуннов было преимущественно кочевым и основывалось на скотоводстве. При этом они занимались земледелием, охотой, ремеслом и торговлей. Военные походы и обмен с соседними государствами также имели большое значение для их экономики.</span>
+                        <span class="lang-content" data-lang="kz"><strong>Қорытынды:</strong> Ғұндардың шаруашылығы негізінен көшпелі болды және мал шаруашылығына негізделді. Сонымен қатар олар егіншілікпен, аңшылықпен, қолөнермен және саудамен айналысты.</span>
+                        <span class="lang-content" data-lang="en"><strong>Conclusion:</strong> The Xiongnu economy was predominantly nomadic and based on cattle breeding, supplemented by agriculture, crafts, and trade.</span>
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Общество (Объединено с вашим новым текстом, зеркальная верстка) -->
+        <!-- 4. Общество (Фото IMG_6567.png) -->
         <section id="society">
             <div class="section-header">
                 <h2>
@@ -670,27 +749,40 @@
 
                     <div class="text-stack">
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">1. Социальная иерархия и верховная власть</strong>
-                            <strong class="lang-content" data-lang="kz">1. Әлеуметтік иерархия және жоғарғы билік</strong>
-                            <strong class="lang-content" data-lang="en">1. Social hierarchy and supreme power</strong>
-                            <p class="lang-content active-lang" data-lang="ru"><strong>Шаньюй</strong> — верховный правитель («Рождённый небом и землёю, поставленный солнцем и луною»). Обладал сакральной и военной властью. Общество делилось на привилегированные роды (Хуянь, Лань, Сюйбу) и крылья (Левое и Правое). Основу составляли свободные общинники-воины и зависимое население с пленниками.</p>
-                            <p class="lang-content" data-lang="kz"><strong>Шаньюй</strong> — жоғарғы билеуші. Қоғам артықшылыққа ие рулар мен қанаттарға бөлінді. Негізін еркін малшылар мен тәуелді халық құрады.</p>
-                            <p class="lang-content" data-lang="en"><strong>Chanyu</strong> was the supreme ruler. Society was divided into privileged clans and wings, consisting mainly of free warriors and dependents.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>1. Социальная иерархия и верховная власть</strong>
+                                <p><strong>Шаньюй</strong> — верховный правитель («Рождённый небом и землёю, поставленный солнцем и луною»). Обладал сакральной и военной властью. Общество делилось на привилегированные роды (Хуянь, Лань, Сюйбу) и крылья (Левое и Правое). Основу составляли свободные общинники-воины и зависимое население с пленниками.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>1. Әлеуметтік иерархия және жоғарғы билік</strong>
+                                <p><strong>Шаньюй</strong> — жоғарғы билеуші. Қоғам артықшылыққа ие рулар мен қанаттарға бөлінді. Негізін еркін малшылар мен тәуелді халық құрады.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>1. Social hierarchy and supreme power</strong>
+                                <p><strong>Chanyu</strong> was the supreme ruler. Society was divided into privileged clans and wings, consisting mainly of free warriors and dependents.</p>
+                            </div>
                         </div>
+
                         <div class="text-stack-item">
-                            <strong class="lang-content active-lang" data-lang="ru">2. Десятичная система и экономика</strong>
-                            <strong class="lang-content" data-lang="kz">2. Ондық жүйе және экономика</strong>
-                            <strong class="lang-content" data-lang="en">2. Decimal system and economy</strong>
-                            <p class="lang-content active-lang" data-lang="ru">Население и войско строго делились на десятки, сотни, тысячи и темники (тумены). Казна пополнялась за счет военной добычи, дани покорённых племен и шелка из Китая. Позже вводится систематический учет населения и налогообложение.</p>
-                            <p class="lang-content" data-lang="kz">Халқы мен әскері ондықтарға, жүздіктерге, мыңдықтарға және түмендерге қатаң бөлінді. Қазына әскери олжа мен салық есебінен толықты.</p>
-                            <p class="lang-content" data-lang="en">The population and army were strictly divided into decimals. The treasury was replenished through military spoils and tribute.</p>
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>2. Десятичная система и экономика</strong>
+                                <p>Население и войско строго делились на десятки, сотни, тысячи и темники (тумены). Казна пополнялась за счет военной добычи, дани покорённых племен и шелка из Китая. Позже вводится систематический учет населения и налогообложение.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>2. Ондық жүйе және экономика</strong>
+                                <p>Халқы мен әскері ондықтарға, жүздіктерге, мыңдықтарға және түмендерге қатаң бөлінді. Қазына әскери олжа мен салық есебінен толықты.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>2. Decimal system and economy</strong>
+                                <p>The population and army were strictly divided into decimals. The treasury was replenished through military spoils and tribute.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Культура -->
+        <!-- 5. Культура (Фото IMG_6574.jpeg) -->
         <section id="culture">
             <div class="section-header">
                 <h2>
@@ -718,7 +810,7 @@
                     </div>
                 </div>
                 <div class="photo-container">
-                    <img src="culture.jpg" alt="Культура хунну">
+                    <img src="IMG_6574.jpeg" alt="Культура хунну">
                 </div>
             </div>
         </section>
@@ -737,7 +829,7 @@
             </p>
         </section>
 
-        <!-- Источники (Обновлены по вашему списку) -->
+        <!-- Источники -->
         <section id="sources" class="sources-section">
             <h3>
                 <span class="lang-content active-lang" data-lang="ru">Источники и литература</span>
