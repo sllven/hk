@@ -152,28 +152,18 @@
 
         .section-header {
             display: grid;
-            grid-template-columns: 280px 1fr;
+            grid-template-columns: 350px 1fr;
             gap: 40px;
             align-items: start;
             margin-bottom: 30px;
         }
 
         h2 {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 700;
             letter-spacing: -0.02em;
             color: var(--text-main);
-            position: relative;
-        }
-
-        h2 span {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 6px;
+            line-height: 1.3;
         }
 
         .section-body {
@@ -405,10 +395,10 @@
 
     <div class="container">
         
-        <!-- 1. Территория / Аумағы / Territory -->
+        <!-- 1. Территория -->
         <section id="territory">
             <div class="section-header">
-                <h2><span>01</span> 
+                <h2>
                     <span data-lang="ru" class="active-lang">Территория расселения</span>
                     <span data-lang="kz">Қоныстану аймағы</span>
                     <span data-lang="en">Territory of Settlement</span>
@@ -447,10 +437,10 @@
             </div>
         </section>
 
-        <!-- 2. Правление / Басқару / Governance -->
+        <!-- 2. Правление -->
         <section id="governance">
             <div class="section-header">
-                <h2><span>02</span> 
+                <h2>
                     <span data-lang="ru" class="active-lang">Особенности правления</span>
                     <span data-lang="kz">Басқару ерекшеліктері</span>
                     <span data-lang="en">Governance Features</span>
@@ -520,10 +510,10 @@
             </div>
         </section>
 
-        <!-- 3. Хозяйство / Шаруашылық / Economy -->
+        <!-- 3. Хозяйство -->
         <section id="economy">
             <div class="section-header">
-                <h2><span>03</span> 
+                <h2>
                     <span data-lang="ru" class="active-lang">Хозяйственная деятельность</span>
                     <span data-lang="kz">Шаруашылық қызметі</span>
                     <span data-lang="en">Economic Activity</span>
@@ -537,17 +527,17 @@
             <div class="section-body">
                 <div class="section-content">
                     <div data-lang="ru" class="active-lang">
-                        <p>Экономика хунну базировалась на **кочевом и полукочевом скотоводстве**. Главным богатством являлись лошади (основа военного превосходства и передвижения), овцы и козы, дававшие мясо, шерсть и молоко. Также разводили крупный рогатый скот и двугорбых верблюдов-бактрианов, незаменимых при кочевках.</p>
+                        <p>Экономика хунну базировалась на <strong>кочевом и полукочевом скотоводстве</strong>. Главным богатством являлись лошади (основа военного превосходства и передвижения), овцы и козы, дававшие мясо, шерсть и молоко. Также разводили крупный рогатый скот и двугорбых верблюдов-бактрианов, незаменимых при кочевках.</p>
                         <p>Наряду со скотоводством, значительное развитие получили ремесла. Высокого уровня достигла металлургия железа и бронзы — хунну производили прочное оружие, наконечники стрел, элементы доспехов и конскую упряжь. Параллельно в долинах рек существовали очаги оседлого и полуземледельческого хозяйства, где выращивали просо и ячмень.</p>
                         <p>Важнейшую роль играла внешняя политика и экономический обмен с империей Хань: кочевники поставляли лошадей, шкуры, меха и кость, получая взамен стратегически важный шелк, зерно и изысканные ремесленные изделия.</p>
                     </div>
                     <div data-lang="kz">
-                        <p>Ғұндардың экономикасы **көшпелі және жартылай көшпелі мал шаруашылығына** негізделді. Басты байлық жылқы (әскери артықшылық пен қозғалыстың негізі), ет, жүн және сүт беретін қой мен ешкі болды. Сондай-ақ ірі қара мал мен қос өркесті түйелерді өсірді.</p>
+                        <p>Ғұндардың экономикасы <strong>көшпелі және жартылай көшпелі мал шаруашылығына</strong> негізделді. Басты байлық жылқы (әскери артықшылық пен қозғалыстың негізі), ет, жүн және сүт беретін қой мен ешкі болды. Сондай-ақ ірі қара мал мен қос өркесті түйелерді өсірді.</p>
                         <p>Мал шаруашылығымен қатар қолөнер де дамыды. Темір мен қола металлургиясы жоғары деңгейге жетті — ғұндар берік қарулар, жебе ұштары, сауыт элементтері мен ат әбзелдерін жасады. Өзен аңғарларында тары мен арпа өсірілетін отырықшы және жартылай егіншілік ошақтары болды.</p>
                         <p>Хань империясымен сыртқы сауда маңызды рөл атқарды: көшпелілер мал шаруашылығы өнімдерін, терілерді жеткізіп, есесіне жібек, астық және қолөнер бұйымдарын алды.</p>
                     </div>
                     <div data-lang="en">
-                        <p>The Xiongnu economy was based on **nomadic and semi-nomadic cattle breeding**. The main wealth was horses, sheep, and goats, which provided meat, wool, and milk. They also bred cattle and two-humped Bactrian camels.</p>
+                        <p>The Xiongnu economy was based on <strong>nomadic and semi-nomadic cattle breeding</strong>. The main wealth was horses, sheep, and goats, which provided meat, wool, and milk. They also bred cattle and two-humped Bactrian camels.</p>
                         <p>Along with cattle breeding, crafts developed significantly. Iron and bronze metallurgy reached a high level — the Xiongnu produced durable weapons, arrowheads, and horse harness. In river valleys, there were foci of settled and semi-agricultural farming where millet and barley were grown.</p>
                         <p>External economic exchange with the Han Empire played a vital role: nomads supplied livestock, hides, and furs in exchange for silk, grain, and refined crafts.</p>
                     </div>
@@ -565,10 +555,10 @@
             </div>
         </section>
 
-        <!-- 4. Общество / Қоғам / Society -->
+        <!-- 4. Общество -->
         <section id="society">
             <div class="section-header">
-                <h2><span>04</span> 
+                <h2>
                     <span data-lang="ru" class="active-lang">Общественное устройство</span>
                     <span data-lang="kz">Қоғамдық құрылымы</span>
                     <span data-lang="en">Social Structure</span>
@@ -625,11 +615,7 @@
                     </ul>
                 </div>
                 <div class="photo-placeholder">
-                    <span>📷 
-                        <span data-lang="ru" class="active-lang">Место для фотографии</span>
-                        <span data-lang="kz">Фотосурет орны</span>
-                        <span data-lang="en">Photo Placeholder</span>
-                    </span>
+                    <span>📷 35cd4ad9-3fcb-4273-8dc6-b870df7d2c76.jpeg</span>
                     <span data-lang="ru" class="active-lang">Реконструкция социального быта кочевников или макет традиционного жилища.</span>
                     <span data-lang="kz">Көшпелілердің әлеуметтік тұрмысының реконструкциясы немесе дәстүрлі баспана макеті.</span>
                     <span data-lang="en">Reconstruction of the social life of nomads or a model of a traditional dwelling.</span>
@@ -637,10 +623,10 @@
             </div>
         </section>
 
-        <!-- 5. Культура / Мәдениет / Culture -->
+        <!-- 5. Культура -->
         <section id="culture">
             <div class="section-header">
-                <h2><span>05</span> 
+                <h2>
                     <span data-lang="ru" class="active-lang">Культурное наследие</span>
                     <span data-lang="kz">Мәдени мұра</span>
                     <span data-lang="en">Cultural Heritage</span>
@@ -654,17 +640,17 @@
             <div class="section-body">
                 <div class="section-content">
                     <div data-lang="ru" class="active-lang">
-                        <p>Хунну оставили яркий след в истории евразийского искусства. Визитной карточкой их культуры стал **«звериный стиль»** — динамичные, стилизованные изображения хищников (тигров, волков, барсов), копытных и фантастических существ, выполненные в технике художественного литья, чеканки и полихромной инкрустации золотом и полудрагоценными камнями.</p>
+                        <p>Хунну оставили яркий след в истории евразийского искусства. Визитной карточкой их культуры стал <strong>«звериный стиль»</strong> — динамичные, стилизованные изображения хищников (тигров, волков, барсов), копытных и фантастических существ, выполненные в технике художественного литья, чеканки и полихромной инкрустации золотом и полудрагоценными камнями.</p>
                         <p>Высокого уровня достигла архитектура погребений. Элитные курганы знати (например, всемирно известные комплексы в урочище Ноин-Ула в Забайкалье) представляли собой сложные подземные деревянные срубы под насыпями, где сохранялись уникальные органические материалы: ковры, шелка, лаковые изделия из Китая, деревянная утварь и одежда.</p>
                         <p>Духовная жизнь строилась на анимистических воззрениях, почитании духов природы, сакральном культе Вечного Неба (Тенгри) и развитом культе предков, что подчеркивалось масштабом поминальных и погребальных обрядов.</p>
                     </div>
                     <div data-lang="kz">
-                        <p>Ғұндар еуразиялық өнер тарихында жарқын із қалдырды. Олардың мәдениетінің визит карточкасы **«аң стилі»** болды — алтынмен және асыл тастармен көмкерілген жыртқыштардың, тұяқтылар мен фантастикалық тіршілік иелерінің динамикалық бейнелері.</p>
+                        <p>Ғұндар еуразиялық өнер тарихында жарқын із қалдырды. Олардың мәдениетінің визит карточкасы <strong>«аң стилі»</strong> болды — алтынмен және асыл тастармен көмкерілген жыртқыштардың, тұяқтылар мен фантастикалық тіршілік иелерінің динамикалық бейнелері.</p>
                         <p>Жерлеу архитектурасы жоғары деңгейге жетті. Ақсүйектердің элиталық қорғандары (мысалы, Ноин-Ула кешені) үйінділер астындағы күрделі ағаш срубтар болды, мұнда кілемдер, жібектер, лакталған бұйымдар сақталған.</p>
                         <p>Рухани өмір анимистік көзқарастарға, табиғат рухтарына табынуға, Мәңгілік Көк Тәңіріне (Тәңірлік) және аруақтар культіне негізделді.</p>
                     </div>
                     <div data-lang="en">
-                        <p>The Xiongnu left a bright mark in the history of Eurasian art. The hallmark of their culture was the **"animal style"** — dynamic, stylized images of predators, ungulates, and fantastic creatures made using artistic casting, chasing, and polychrome inlay with gold and semi-precious stones.</p>
+                        <p>The Xiongnu left a bright mark in the history of Eurasian art. The hallmark of their culture was the <strong>"animal style"</strong> — dynamic, stylized images of predators, ungulates, and fantastic creatures made using artistic casting, chasing, and polychrome inlay with gold and semi-precious stones.</p>
                         <p>Burial architecture reached a high level. Elite elite kurgans (such as the Noin-Ula complexes in Transbaikalia) were complex underground wooden log cabins under mounds, preserving unique organic materials like carpets, silks, and lacquerware.</p>
                         <p>Spiritual life was based on animistic views, worship of nature spirits, the cult of Eternal Sky (Tengri), and the cult of ancestors.</p>
                     </div>
@@ -682,7 +668,7 @@
             </div>
         </section>
 
-        <!-- Вывод / Қорытынды / Conclusion -->
+        <!-- Вывод -->
         <section id="conclusion" class="conclusion-section">
             <h3>
                 <span data-lang="ru" class="active-lang">Итоговый вывод</span>
@@ -696,7 +682,7 @@
             </p>
         </section>
 
-        <!-- Источники / Дереккөздер / Sources -->
+        <!-- Источники -->
         <section id="sources" class="sources-section">
             <h3>
                 <span data-lang="ru" class="active-lang">Источники и литература</span>
@@ -735,8 +721,8 @@
                 </h4>
                 <ul>
                     <li>Болатхан Мансур</li>
-                    <li>Место2</li>
-                    <li>Место3</li>
+                    <li>Акжолов Арлан</li>
+                    <li>Новомлинова Виктория</li>
                     <li>Место4</li>
                     <li>Место5</li>
                 </ul>
@@ -746,7 +732,6 @@
 
     <script>
         function setLanguage(lang) {
-            // Переключаем кнопки
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
                 if(btn.textContent.toLowerCase() === lang) {
@@ -754,7 +739,6 @@
                 }
             });
 
-            // Переключаем все текстовые элементы с data-lang
             document.querySelectorAll('[data-lang]').forEach(el => {
                 el.classList.remove('active-lang');
                 if(el.getAttribute('data-lang') === lang) {
