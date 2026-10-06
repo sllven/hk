@@ -104,7 +104,7 @@
             border-color: var(--accent);
         }
 
-        /* Пункт 0 (Заголовок империи) с большим пространством и фото */
+        /* Пункт 0 (Заголовок империи) с реальной фотографией */
         .header-item-zero {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -191,28 +191,25 @@
             margin-bottom: 18px;
         }
 
-        /* Увеличенные места под фотографии */
-        .photo-placeholder {
+        /* Контейнер для реальных фотографий */
+        .photo-container {
             background-color: #eae5dc;
-            border: 2px dashed var(--border-dark);
+            border: 1px solid var(--border-dark);
             border-radius: 4px;
-            padding: 40px 20px;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.95rem;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 360px; /* Увеличено */
+            min-height: 360px;
         }
 
-        .photo-placeholder span {
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
             display: block;
-            font-weight: 600;
-            color: var(--text-main);
-            margin-bottom: 8px;
-            font-size: 1.05rem;
         }
 
         /* Текстовые блоки для пунктов без карточек */
@@ -304,8 +301,9 @@
         .sub-footer-video h3 {
             color: #ffffff;
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             letter-spacing: -0.01em;
+            font-weight: 700;
         }
 
         .video-container {
@@ -401,7 +399,7 @@
         </div>
     </nav>
 
-    <!-- ПУНКТ 0: Большой заголовок империи с местом под фото -->
+    <!-- ПУНКТ 0: Большой заголовок империи с реальной фотографией IMG_6567.png -->
     <div class="header-item-zero">
         <div class="zero-layout">
             <div>
@@ -421,11 +419,8 @@
                     <span data-lang="en">The first nomadic empire of the Eurasian steppes, which created a complex military-political system and determined the vector of development of the nomadic world in the 2nd-1st centuries BC, exerting a colossal influence on ethnogenesis.</span>
                 </p>
             </div>
-            <div class="photo-placeholder">
-                <span>📷 Пункт 0 (Фото заголовка)</span>
-                <span data-lang="ru" class="active-lang">Титульная иллюстрация империи хунну</span>
-                <span data-lang="kz">Ғұн империясының титулдық иллюстрациясы</span>
-                <span data-lang="en">Title illustration of the Xiongnu Empire</span>
+            <div class="photo-container">
+                <img src="IMG_6567.png" alt="Цивилизация хунну (Пункт 0)">
             </div>
         </div>
     </div>
@@ -461,11 +456,9 @@
                         <p>During the period of its peak power (2nd-1st centuries BC), the Xiongnu Empire was a colossal supra-ethnic formation. Its borders extended from the taiga zone of southern Siberia (Lake Baikal basin) in the north to the Great Wall of China in the south. In the west, Xiongnu spheres of influence reached the upper Irtysh and Semirechye (including modern Kazakhstan lands), and in the east they stretched to Manchuria and the Pacific coasts.</p>
                     </div>
                 </div>
-                <div class="photo-placeholder">
-                    <span>📷 Большое фото 1</span>
-                    <span data-lang="ru" class="active-lang">Карта-схема ареала расселения империи хунну и границы ее экспансии во II веке до н.э.</span>
-                    <span data-lang="kz">Ғұн империясының таралу аймағы мен оның б.з.д. II ғасырдағы карта-схемасы.</span>
-                    <span data-lang="en">Map of the Xiongnu Empire distribution area and its expansion boundaries in the 2nd century BC.</span>
+                <div class="photo-container">
+                    <!-- Замените territory.jpg на имя вашей реальной фотографии для 1 пункта -->
+                    <img src="territory.jpg" alt="Территория расселения хунну">
                 </div>
             </div>
         </section>
@@ -485,11 +478,9 @@
                 </p>
             </div>
             <div class="section-body reverse">
-                <div class="photo-placeholder">
-                    <span>📷 Большое фото 2</span>
-                    <span data-lang="ru" class="active-lang">Реконструкция ставки шаньюя и структура военного командования.</span>
-                    <span data-lang="kz">Шаньюй ордасының реконструкциясы және әскери қолбасшылық құрылымы.</span>
-                    <span data-lang="en">Reconstruction of the Chanyu headquarters and military command structure.</span>
+                <div class="photo-container">
+                    <!-- Замените governance.jpg на имя вашей реальной фотографии для 2 пункта -->
+                    <img src="governance.jpg" alt="Особенности правления хунну">
                 </div>
                 <div class="section-content">
                     <div data-lang="ru" class="active-lang">
@@ -567,16 +558,14 @@
                         <p>External economic exchange with the Han Empire played a vital role: nomads supplied livestock, hides, and furs in exchange for silk, grain, and refined crafts.</p>
                     </div>
                 </div>
-                <div class="photo-placeholder">
-                    <span>📷 Большое фото 3</span>
-                    <span data-lang="ru" class="active-lang">Образцы древнего кочевого вооружения, конской упряжи или ремесленных изделий из бронзы.</span>
-                    <span data-lang="kz">Ежелгі көшпелі қару-жарақ үлгілері, ат әбзелдері немесе қоладан жасалған қолөнер бұйымдары.</span>
-                    <span data-lang="en">Samples of ancient nomadic weaponry, horse harness, or bronze craft products.</span>
+                <div class="photo-container">
+                    <!-- Замените economy.jpg на имя вашей реальной фотографии для 3 пункта -->
+                    <img src="economy.jpg" alt="Хозяйство хунну">
                 </div>
             </div>
         </section>
 
-        <!-- 4. Общество (Зеркальное расположение, фото IMG_6567.png слева) -->
+        <!-- 4. Общество (Зеркальное расположение, реальное фото IMG_6567.png слева) -->
         <section id="society">
             <div class="section-header">
                 <h2>
@@ -591,11 +580,8 @@
                 </p>
             </div>
             <div class="section-body reverse">
-                <div class="photo-placeholder">
-                    <span>📷 IMG_6567.png</span>
-                    <span data-lang="ru" class="active-lang">Реконструкция социального быта кочевников или макет традиционного жилища.</span>
-                    <span data-lang="kz">Көшпелілердің әлеуметтік тұрмысының реконструкциясы немесе дәстүрлі баспана макеті.</span>
-                    <span data-lang="en">Reconstruction of the social life of nomads or a model of a traditional dwelling.</span>
+                <div class="photo-container">
+                    <img src="IMG_6567.png" alt="Общественное устройство хунну">
                 </div>
                 <div class="section-content">
                     <div data-lang="ru" class="active-lang">
@@ -676,11 +662,9 @@
                         <p>Spiritual life was based on animistic views, worship of nature spirits, the cult of Eternal Sky (Tengri), and the cult of ancestors.</p>
                     </div>
                 </div>
-                <div class="photo-placeholder">
-                    <span>📷 Большое фото 5</span>
-                    <span data-lang="ru" class="active-lang">Находки из Ноин-Улинских курганов: золотые украшения в зверином стиле или древние ткани.</span>
-                    <span data-lang="kz">Ноин-Ула қорғандарының олжалары: аң стиліндегі алтын әшекейлер немесе көне маталар.</span>
-                    <span data-lang="en">Finds from the Noin-Ula kurgans: gold jewelry in animal style or ancient fabrics.</span>
+                <div class="photo-container">
+                    <!-- Замените culture.jpg на имя вашей реальной фотографии для 5 пункта -->
+                    <img src="culture.jpg" alt="Культура хунну">
                 </div>
             </div>
         </section>
@@ -748,17 +732,16 @@
         </div>
     </footer>
 
-    <!-- ФУТТЕР-ФУТТЕРОВ: Видео на почти весь экран с включением по нажатию -->
+    <!-- ФУТТЕР-ФУТТЕРОВ: Видео ssstik.io_@anghelfromearth_1790789734523.mp4 с текстом "Спасибо за внимание" -->
     <div class="sub-footer-video">
         <h3>
-            <span data-lang="ru" class="active-lang">Видеопрезентация проекта (Нажмите для воспроизведения)</span>
-            <span data-lang="kz">Жобаның бейнепрезентациясы (Ойнату үшін басыңыз)</span>
-            <span data-lang="en">Project Video Presentation (Click to Play)</span>
+            <span data-lang="ru" class="active-lang">Спасибо за внимание. С любовью 5 группа!</span>
+            <span data-lang="kz">Назарларыңызға рахмет. Сүйіспеншілікпен 5 топ!</span>
+            <span data-lang="en">Thank you for your attention. With love, group 5!</span>
         </h3>
         <div class="video-container">
-            <!-- Укажите путь к вашему видеофайлу вместо video.mp4 в атрибуте src -->
             <video controls preload="metadata">
-                <source src="video.mp4" type="video/mp4">
+                <source src="ssstik.io_@anghelfromearth_1790789734523.mp4" type="video/mp4">
                 <span data-lang="ru" class="active-lang">Ваш браузер не поддерживает элемент video.</span>
                 <span data-lang="kz">Сіздің браузеріңіз video элементін қолдамайды.</span>
                 <span data-lang="en">Your browser does not support the video tag.</span>
