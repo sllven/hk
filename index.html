@@ -31,7 +31,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.65;
+            line-height: 1.6;
             font-size: 17px;
         }
 
@@ -173,7 +173,7 @@
         }
 
         .section-content p {
-            margin-bottom: 14px;
+            margin-bottom: 10px;
         }
 
         .photo-container {
@@ -194,45 +194,46 @@
             object-fit: contain;
         }
 
+        /* Уменьшенное расстояние между подпунктами */
         .text-stack {
             display: grid;
-            gap: 18px;
-            margin-top: 15px;
+            gap: 10px;
+            margin-top: 10px;
         }
 
         .text-stack-item strong {
             display: block;
             color: var(--text-main);
-            font-size: 1.05rem;
-            margin-bottom: 4px;
+            font-size: 1rem;
+            margin-bottom: 2px;
         }
 
         .text-stack-item p, .text-stack-item ul {
             color: var(--text-muted);
-            font-size: 0.98rem;
+            font-size: 0.95rem;
         }
 
         .text-stack-item ul {
             padding-left: 20px;
-            margin-top: 6px;
+            margin-top: 4px;
         }
 
         .text-stack-item li {
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .highlight-box {
             background-color: var(--accent-light);
             border-left: 3px solid var(--accent);
-            padding: 22px 26px;
-            margin-bottom: 24px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
             border-radius: 0 4px 4px 0;
         }
 
         .highlight-box p {
             margin: 0;
             color: var(--text-main);
-            font-size: 1.05rem;
+            font-size: 1rem;
         }
 
         .conclusion-section, .sources-section {
@@ -392,7 +393,7 @@
         </div>
     </nav>
 
-    <!-- ПУНКТ 0 (Чистый заголовок) -->
+    <!-- ПУНКТ 0 -->
     <div class="header-item-zero">
         <div class="zero-layout">
             <div>
@@ -415,7 +416,7 @@
 
     <div class="container">
         
-        <!-- 1. Территория и расселение (Сокращенный вариант) -->
+        <!-- 1. Территория и расселение (ВЕРНУЛ ВСЕ 6 ПУНКТОВ, ЧУТЬ СОКРАЩЕННЫЕ) -->
         <section id="territory">
             <div class="section-header">
                 <h2>
@@ -424,9 +425,9 @@
                     <span class="lang-content" data-lang="en">Territory and Settlement</span>
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem;">
-                    <span class="lang-content active-lang" data-lang="ru">Основные этапы формирования и экспансии державы хунну.</span>
-                    <span class="lang-content" data-lang="kz">Ғұн державасының қалыптасу және кеңею кезеңдері.</span>
-                    <span class="lang-content" data-lang="en">Key stages of formation and expansion of the Xiongnu state.</span>
+                    <span class="lang-content active-lang" data-lang="ru">Полные этапы формирования, экспансии и распада державы хунну.</span>
+                    <span class="lang-content" data-lang="kz">Ғұн державасының қалыптасу, кеңею және ыдырау кезеңдері.</span>
+                    <span class="lang-content" data-lang="en">Full stages of formation, expansion and collapse of the Xiongnu state.</span>
                 </p>
             </div>
             <div class="section-body">
@@ -434,31 +435,91 @@
                     <div class="text-stack">
                         <div class="text-stack-item">
                             <div class="lang-content active-lang" data-lang="ru">
-                                <strong>1. Формирование и расцвет (IV–I вв. до н. э.)</strong>
-                                <p>В конце I тыс. до н. э. хунну создали первую мощную кочевую империю. Под властью шаньюя Модэ они объединили племена от Забайкалья до Хуанхэ.</p>
+                                <strong>1. Формирование державы (IV–III вв. до н. э.)</strong>
+                                <p>Хунну создали первую мощную кочевую империю от Забайкалья до Тибета. Во главе с шаньюем Модэ (206–174 гг. до н. э.) они подчинили племена и расселились в Монголии и Туве.</p>
                             </div>
                             <div class="lang-content" data-lang="kz">
-                                <strong>1. Қалыптасуы және өрлеуі (б.з.д. IV–I ғғ.)</strong>
-                                <p>б.з.д. I мыңжылдықтың соңында ғұндар алғашқы қуатты көшпелі империя құрды. Модэ шаньюй тұсында олар Забайкалье мен Хуанхэ аралығын біріктірді.</p>
+                                <strong>1. Державаның қалыптасуы (б.з.д. IV–III ғғ.)</strong>
+                                <p>Ғұндар Забайкалье мен Тибет аралығында алғашқы қуатты көшпелі империя құрды. Модэ шаньюй тұсында олар көрші тайпаларды бағындырды.</p>
                             </div>
                             <div class="lang-content" data-lang="en">
-                                <strong>1. Formation and rise (IV–I centuries BC)</strong>
-                                <p>At the end of the 1st millennium BC, the Xiongnu created a powerful nomadic empire under Chanyu Modu.</p>
+                                <strong>1. Formation of power (IV–III centuries BC)</strong>
+                                <p>The Xiongnu created a powerful nomadic empire from Transbaikalia to Tibet under Chanyu Modu.</p>
                             </div>
                         </div>
 
                         <div class="text-stack-item">
                             <div class="lang-content active-lang" data-lang="ru">
-                                <strong>2. Разделение и миграции (I в. до н. э. — V в. н. э.)</strong>
-                                <p>В 55 г. до н. э. империя распалась на южных (подчиненных Китаю) и северных хунну, ушедших на запад и ставших предками европейских гуннов.</p>
+                                <strong>2. Войны с Китаем (II–I вв. до н. э.)</strong>
+                                <p>Хунну боролись с юэчжами и совершали набеги на Китай. С 129 по 58 гг. до н. э. шла долгая истощающая война между хунну и империей Хань.</p>
                             </div>
                             <div class="lang-content" data-lang="kz">
-                                <strong>2. Бөліну және көші-қон (б.з.д. I ғ. — б.з. V ғ.)</strong>
-                                <p>б.з.д. 55 жылы империя оңтүстік және солтүстік ғұндар болып бөлінді. Солтүстік ғұндар батысқа кетіп, еуропалық ғұндардың арғы атасына айналды.</p>
+                                <strong>2. Қытаймен соғыстар (б.з.д. II–I ғғ.)</strong>
+                                <p>Ғұндар юэчжилермен күресіп, Қытайға шабуыл жасады. б.з.д. 129–58 жылдары Хань империясымен ұзақ соғыс жүрді.</p>
                             </div>
                             <div class="lang-content" data-lang="en">
-                                <strong>2. Split and migration (1st century BC — 5th century AD)</strong>
-                                <p>In 55 BC the empire split. Northern Xiongnu migrated west, becoming ancestors of the European Huns.</p>
+                                <strong>2. Wars with China (II–I centuries BC)</strong>
+                                <p>The Xiongnu fought the Yuezhi and raided China. A long exhausting war with the Han Empire took place from 129 to 58 BC.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-stack-item">
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>3. Распад на ветви (55 г. до н. э. — 48 г. н. э.)</strong>
+                                <p>Держава разделилась. Южные хунну подчинились Китаю и ассимилировались, а северные во главе с Чжичжи ушли на северо-запад Монголии и в Среднюю Азию.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>3. Бөліну (б.з.д. 55 ж. — б.з. 48 ж.)</strong>
+                                <p>Держава оңтүстік және солтүстік болып бөлінді. Оңтүстік ғұндар Қытайға бағынды, ал солтүстіктер тәуелсіздікті сақтау үшін батысқа қарай кетті.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>3. Split into branches (55 BC — 48 AD)</strong>
+                                <p>The state split. Southern Xiongnu accepted Chinese rule, while Northern Xiongnu moved northwest to preserve independence.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-stack-item">
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>4. Уход на запад (93 г. н. э.)</strong>
+                                <p>Под натиском сяньби северные хунну ушли в Джунгарию, Казахстан, к Уралу и Волге, став предками европейских гуннов.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>4. Батысқа кету (б.з. 93 ж.)</strong>
+                                <p>Сяньбилердің қысымымен солтүстік ғұндар Жетісуға, Қазақстанға, Еділ бойына кетіп, еуропалық ғұндардың ата-бабасына айналды.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>4. Migration west (93 AD)</strong>
+                                <p>Under pressure, Northern Xiongnu migrated to Kazakhstan and the Volga region, becoming ancestors of the Huns.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-stack-item">
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>5. Южные хунну в Китае (I–III вв. н. э.)</strong>
+                                <p>Находясь под протекторатом Китая, их потомки позже основали собственные государства: Северная Хань, Раннее и Позднее Чжао.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>5. Қытайдағы оңтүстік ғұндар (б.з. I–III ғғ.)</strong>
+                                <p>Қытай протекторатындағы оңтүстік ғұндардың ұрпақтары кейіннен Солтүстік Хаң және Чжао сияқты мемлекеттер құрды.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>5. Southern Xiongnu in China (I–III centuries AD)</strong>
+                                <p>Under Chinese protectorate, their descendants later established states like Northern Han and Zhao.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-stack-item">
+                            <div class="lang-content active-lang" data-lang="ru">
+                                <strong>6. Исчезновение (IV–V вв. н. э.)</strong>
+                                <p>К IV–V вв. хунну как единый народ прекратили существование, растворившись в других кочевых союзах.</p>
+                            </div>
+                            <div class="lang-content" data-lang="kz">
+                                <strong>6. Жойылу (б.з. IV–V ғғ.)</strong>
+                                <p>IV–V ғасырларда ғұндар біртұтас халық ретінде өмір сүруін тоқтатып, басқа одақтардың құрамына сіңіп кетті.</p>
+                            </div>
+                            <div class="lang-content" data-lang="en">
+                                <strong>6. Disappearance (IV–V centuries AD)</strong>
+                                <p>By the 4th-5th centuries, the Xiongnu as a single nation ceased to exist, merging into other nomadic unions.</p>
                             </div>
                         </div>
                     </div>
@@ -469,7 +530,7 @@
             </div>
         </section>
 
-        <!-- 2. Правление (Особенности правления и принцип престолонаследия) -->
+        <!-- 2. Правление -->
         <section id="governance">
             <div class="section-header">
                 <h2>
@@ -479,7 +540,7 @@
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem;">
                     <span class="lang-content active-lang" data-lang="ru">Централизованная система власти и административная структура.</span>
-                    <span class="lang-content" data-lang="kz">Орталықтандырылған билік жүйесі және әкімшілік құрылым።</span>
+                    <span class="lang-content" data-lang="kz">Орталықтандырылған билік жүйесі және әкімшілік құрылым.</span>
                     <span class="lang-content" data-lang="en">Centralized power system and administrative structure.</span>
                 </p>
             </div>
@@ -489,10 +550,10 @@
                 </div>
                 <div class="section-content">
                     <div class="lang-content active-lang" data-lang="ru">
-                        <p>Государство хунну представляло собой централизованную военную империю, которой руководил верховный правитель с титулом <strong>Шаньюй</strong>. Власть правителя носила сакральный и абсолютный характер.</p>
+                        <p>Государство хунну представляло собой централизованную военную империю, которой руководил верховный правитель с титулом <strong>Шаньюй</strong>. Его власть носила сакральный и абсолютный характер.</p>
                     </div>
                     <div class="lang-content" data-lang="kz">
-                        <p>Ғұн мемлекеті <strong>Шаньюй</strong> титулы бар жоғарғы билеуші басқаратын орталықтандырылған әскери империя болды. Билік сакральді және абсолютті сипатқа ие болды.</p>
+                        <p>Ғұн мемлекеті <strong>Шаньюй</strong> титулы бар жоғарғы билеуші басқаратын орталықтандырылған әскери империя болды. Оның билігі сакральді және абсолютті сипатқа ие болды.</p>
                     </div>
                     <div class="lang-content" data-lang="en">
                         <p>The Xiongnu state was a centralized military empire led by the supreme ruler titled <strong>Chanyu</strong>, possessing absolute and sacred authority.</p>
@@ -552,63 +613,45 @@
                         <div class="text-stack-item">
                             <div class="lang-content active-lang" data-lang="ru">
                                 <strong>1. Скотоводство</strong>
-                                <ul>
-                                    <li>Главное занятие: разведение лошадей, овец и верблюдов для передвижения и военных походов.</li>
-                                </ul>
+                                <p>Главное занятие: разведение лошадей, овец и верблюдов для передвижения и военных походов.</p>
                             </div>
                             <div class="lang-content" data-lang="kz">
                                 <strong>1. Мал шаруашылығы</strong>
-                                <ul>
-                                    <li>Басты кәсібі: жылқы, қой және түйе өсіру.</li>
-                                </ul>
+                                <p>Басты кәсібі: жылқы, қой және түйе өсіру.</p>
                             </div>
                             <div class="lang-content" data-lang="en">
                                 <strong>1. Cattle breeding</strong>
-                                <ul>
-                                    <li>Main occupation: breeding horses, sheep, and camels.</li>
-                                </ul>
+                                <p>Main occupation: breeding horses, sheep, and camels.</p>
                             </div>
                         </div>
 
                         <div class="text-stack-item">
                             <div class="lang-content active-lang" data-lang="ru">
                                 <strong>2. Земледелие и ремесло</strong>
-                                <ul>
-                                    <li>Выращивание зерновых культур в долинах рек, металлургия, изготовление оружия и утвари.</li>
-                                </ul>
+                                <p>Выращивание зерновых культур в долинах рек, металлургия, изготовление оружия и утвари.</p>
                             </div>
                             <div class="lang-content" data-lang="kz">
                                 <strong>2. Егіншілік пен қолөнер</strong>
-                                <ul>
-                                    <li>Өзен алқаптарында егін өсіру, металлургия және қару-жарақ жасау.</li>
-                                </ul>
+                                <p>Өзен алқаптарында егін өсіру, металлургия және қару-жарақ жасау.</p>
                             </div>
                             <div class="lang-content" data-lang="en">
                                 <strong>2. Agriculture and crafts</strong>
-                                <ul>
-                                    <li>Growing crops in river valleys, metallurgy, and weapon making.</li>
-                                </ul>
+                                <p>Growing crops in river valleys, metallurgy, and weapon making.</p>
                             </div>
                         </div>
 
                         <div class="text-stack-item">
                             <div class="lang-content active-lang" data-lang="ru">
                                 <strong>3. Торговля и добыча</strong>
-                                <ul>
-                                    <li>Обмен скота и мехов на китайский шёлк, а также получение военной добычи.</li>
-                                </ul>
+                                <p>Обмен скота и мехов на китайский шёлк, а также получение военной добычи.</p>
                             </div>
                             <div class="lang-content" data-lang="kz">
                                 <strong>3. Сауда мен олжа</strong>
-                                <ul>
-                                    <li>Мал мен теріні қытай жібегіне айырбастау, сондай-ақ әскери олжалар.</li>
-                                </ul>
+                                <p>Мал мен теріні қытай жібегіне айырбастау, сондай-ақ әскери олжалар.</p>
                             </div>
                             <div class="lang-content" data-lang="en">
                                 <strong>3. Trade and spoils</strong>
-                                <ul>
-                                    <li>Exchanging livestock and furs for Chinese silk, plus military spoils.</li>
-                                </ul>
+                                <p>Exchanging livestock and furs for Chinese silk, plus military spoils.</p>
                             </div>
                         </div>
                     </div>
@@ -628,7 +671,7 @@
             </div>
         </section>
 
-        <!-- 4. Общество (Ровно 4 подпункта снизу под фото) -->
+        <!-- 4. Общество (4 подпункта аккуратно под фотографией) -->
         <section id="society">
             <div class="section-header">
                 <h2>
@@ -656,104 +699,106 @@
                     <div class="lang-content" data-lang="en">
                         <p>The social structure of the Xiongnu was a tribal society with a developed military and administrative hierarchy.</p>
                     </div>
-
-                    <div class="text-stack">
-                        <div class="text-stack-item">
-                            <div class="lang-content active-lang" data-lang="ru">
-                                <strong>1. Верховная власть и знать</strong>
-                                <p>Шаньюй обладал абсолютной властью. Общество делилось на привилегированные роды и крылья империи.</p>
-                            </div>
-                            <div class="lang-content" data-lang="kz">
-                                <strong>1. Жоғарғы билік және ақсүйектер</strong>
-                                <p>Шаньюй шексіз билікке ие болды. Қоғам артықшылықты руларға бөлінді.</p>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <strong>1. Supreme power and nobility</strong>
-                                <p>Chanyu held absolute power. Society was divided into privileged clans.</p>
-                            </div>
+                </div>
+            </div>
+            <!-- 4 подпункта аккуратно под фотографией -->
+            <div style="margin-top: 30px;">
+                <div class="text-stack" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                    <div class="text-stack-item" style="background: var(--surface-color); padding: 16px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <div class="lang-content active-lang" data-lang="ru">
+                            <strong>1. Верховная власть</strong>
+                            <p>Шаньюй обладал абсолютной властью, опираясь на знать и привилегированные роды.</p>
                         </div>
-
-                        <div class="text-stack-item">
-                            <div class="lang-content active-lang" data-lang="ru">
-                                <strong>2. Общинники и воины</strong>
-                                <p>Основу населения составляли свободные скотоводы, каждый из которых являлся вооруженным воином.</p>
-                            </div>
-                            <div class="lang-content" data-lang="kz">
-                                <strong>2. Қауымдастық және жауынгерлер</strong>
-                                <p>Халықтың негізін қару ұстаған еркін малшылар құрады.</p>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <strong>2. Commoners and warriors</strong>
-                                <p>The population core consisted of free herders, each being an armed warrior.</p>
-                            </div>
+                        <div class="lang-content" data-lang="kz">
+                            <strong>1. Жоғарғы билік</strong>
+                            <p>Шаньюй ақсүйектерге сүйене отырып, шексіз билікке ие болды.</p>
                         </div>
-
-                        <div class="text-stack-item">
-                            <div class="lang-content active-lang" data-lang="ru">
-                                <strong>3. Десятичная система</strong>
-                                <p>Население и армия строго делились на десятки, сотни, тысячи и темники (тумены).</p>
-                            </div>
-                            <div class="lang-content" data-lang="kz">
-                                <strong>3. Ондық жүйе</strong>
-                                <p>Халық пен әскер ондықтарға, жүздіктерге және түмендерге бөлінді.</p>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <strong>3. Decimal system</strong>
-                                <p>The population and army were divided into decimals and tumens.</p>
-                            </div>
+                        <div class="lang-content" data-lang="en">
+                            <strong>1. Supreme power</strong>
+                            <p>Chanyu held absolute power, relying on nobility and privileged clans.</p>
                         </div>
-
-                        <div class="text-stack-item">
-                            <div class="lang-content active-lang" data-lang="ru">
-                                <strong>4. Налоги и экономика</strong>
-                                <p>Казна пополнялась за счет военной добычи, дани племен и систематического налогообложения.</p>
-                            </div>
-                            <div class="lang-content" data-lang="kz">
-                                <strong>4. Салық және экономика</strong>
-                                <p>Қазына әскери олжа және жүйелі салық жинау арқылы толықты.</p>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <strong>4. Taxes and economy</strong>
-                                <p>The treasury was replenished through military spoils and systematic taxation.</p>
-                            </div>
+                    </div>
+                    <div class="text-stack-item" style="background: var(--surface-color); padding: 16px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <div class="lang-content active-lang" data-lang="ru">
+                            <strong>2. Общинники-воины</strong>
+                            <p>Основу населения составляли свободные скотоводы, являвшиеся вооруженными воинами.</p>
+                        </div>
+                        <div class="lang-content" data-lang="kz">
+                            <strong>2. Қауымдастық жауынгерлері</strong>
+                            <p>Халықтың негізін қару ұстаған еркін малшылар құрады.</p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <strong>2. Commoner warriors</strong>
+                            <p>The core consisted of free herders who served as armed warriors.</p>
+                        </div>
+                    </div>
+                    <div class="text-stack-item" style="background: var(--surface-color); padding: 16px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <div class="lang-content active-lang" data-lang="ru">
+                            <strong>3. Десятичная система</strong>
+                            <p>Население и армия строго делились на десятки, сотни, тысячи и тумены.</p>
+                        </div>
+                        <div class="lang-content" data-lang="kz">
+                            <strong>3. Ондық жүйе</strong>
+                            <p>Халық пен әскер ондықтарға, жүздіктерге және түмендерге бөлінді.</p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <strong>3. Decimal system</strong>
+                            <p>The population and army were strictly divided into decimals and tumens.</p>
+                        </div>
+                    </div>
+                    <div class="text-stack-item" style="background: var(--surface-color); padding: 16px; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <div class="lang-content active-lang" data-lang="ru">
+                            <strong>4. Налоги и экономика</strong>
+                            <p>Казна пополнялась за счет военной добычи, дани племен и систематических сборов.</p>
+                        </div>
+                        <div class="lang-content" data-lang="kz">
+                            <strong>4. Салық және экономика</strong>
+                            <p>Қазына әскери олжа және жүйелі салық жинау арқылы толықты.</p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <strong>4. Taxes and economy</strong>
+                            <p>The treasury was replenished through military spoils and systematic taxation.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Культура (Сокращенный текст + 4 интересных факта) -->
+        <!-- 5. Культура (Чистые языки + чуть больше текста + факты) -->
         <section id="culture">
             <div class="section-header">
                 <h2>
                     <span class="lang-content active-lang" data-lang="ru">Культурное наследие</span>
-                    <span class="lang-content" data-lang="kz">Мәдени мұра</span>
+                    <span class="lang-content" data-lang="kz">Ғұндардың мәдени мұрасы</span>
                     <span class="lang-content" data-lang="en">Cultural Heritage</span>
                 </h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem;">
-                    <span class="lang-content active-lang" data-lang="ru">Материальное искусство и погребальные традиции хунну.</span>
-                    <span class="lang-content" data-lang="kz">Ғұндардың материалдық өнері мен жерлеу дәстүрлері.</span>
-                    <span class="lang-content" data-lang="en">Material art and burial traditions of the Xiongnu.</span>
+                    <span class="lang-content active-lang" data-lang="ru">Материальное искусство, погребальные традиции и духовный мир хунну.</span>
+                    <span class="lang-content" data-lang="kz">Материалдық өнер, жерлеу дәстүрлері мен рухани әлем.</span>
+                    <span class="lang-content" data-lang="en">Material art, burial traditions, and spiritual world.</span>
                 </p>
             </div>
             <div class="section-body">
                 <div class="section-content">
                     <div class="lang-content active-lang" data-lang="ru">
-                        <p>Культура хунну отличалась развитым <strong>«звериным стилем»</strong> в искусстве и монументальной архитектурой элитных курганов (Ноин-Ула), сохранивших уникальные ткани и ковры. Духовная жизнь опиралась на культ Вечного Неба и предков.</p>
+                        <p>Культура хунну отличалась высоким мастерством изготовления изделий из металла и развитым <strong>«звериным стилем»</strong> в искусстве. Динамичные изображения хищников и фантастических существ подчеркивали их воинственный и самобытный мировоззренческий уклад.</p>
+                        <p>Особое место занимала монументальная архитектура элитных курганов знати (таких как комплексы в урочище Ноин-Ула), под сложными деревянными срубами которых прекрасно сохранялись уникальные органические материалы: шерстяные ковры, изысканные китайские шелка и резная деревянная утварь. Духовная жизнь базировалась на анимистических воззрениях, почитании сил природы и сакральном культе Вечного Неба.</p>
                     </div>
                     <div class="lang-content" data-lang="kz">
-                        <p>Ғұн мәдениеті өнердегі дамыған <strong>«аң стилімен»</strong> және Ноин-Ула элиталық қорғандарының сәулетімен ерекшеленді. Рухани өмір Тәңірлікке негізделді.</p>
+                        <p>Ғұн мәдениеті металл бұйымдарын жасаудағы жоғары шеберлігімен және өнердегі дамыған <strong>«аң стилімен»</strong> ерекшеленді. Жыртқыштар мен фантастикалық тіршілік иелерінің динамикалық бейнелері олардың жауынгерлік дүниетанымын көрсетті.</p>
+                        <p>Ақсүйектердің элиталық қорғандарының сәулеті (Ноин-Ула кешендері сияқты) ерекше орын алды, олардың астында жүн кілемдер, талғампаз жібектер мен ағаш ыдыстар тамаша сақталған. Рухани өмір Тәңірлік пен табиғат күштеріне табынуға негізделді.</p>
                     </div>
                     <div class="lang-content" data-lang="en">
-                        <p>Xiongnu culture featured the developed <strong>"animal style"</strong> in art and monumental burial architecture of elite kurgans, preserving unique textiles.</p>
+                        <p>Xiongnu culture was distinguished by high skill in metalwork and the developed <strong>"animal style"</strong> in art. Dynamic images of predators and fantastic creatures emphasized their warrior worldview.</p>
+                        <p>A special place was occupied by the monumental architecture of elite kurgans (such as Noin-Ula), under which unique organic materials like woolen carpets, fine silks, and carved wooden utensils were perfectly preserved. Spiritual life was based on the cult of Eternal Sky.</p>
                     </div>
 
-                    <div class="text-stack" style="margin-top: 25px;">
+                    <div class="text-stack" style="margin-top: 20px;">
                         <div class="text-stack-item">
                             <strong class="lang-content active-lang" data-lang="ru">Интересные факты:</strong>
                             <strong class="lang-content" data-lang="kz">Қызықты фактілер:</strong>
                             <strong class="lang-content" data-lang="en">Interesting facts:</strong>
-                            <ul style="list-style-type: disc; padding-left: 20px; margin-top: 8px;">
+                            <ul style="list-style-type: disc; padding-left: 20px; margin-top: 6px;">
                                 <li class="lang-content active-lang" data-lang="ru">Хунну первыми внедрили свистящие стрелы для координации конного войска в бою.</li>
                                 <li class="lang-content active-lang" data-lang="ru">Они создали оборонительные валы для защиты кочевий на границах.</li>
                                 <li class="lang-content active-lang" data-lang="ru">В курганах знати археологи находят античные греческие ткани и римские стекла.</li>
