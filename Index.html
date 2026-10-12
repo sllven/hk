@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English task</title>
+    <style>
+        /* Сброс базовых стилей для полного заполнения */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрирование по вертикали */
+            align-items: center;    /* Центрирование по горизонтали */
+            background-color: #f4f6f9; /* Нейтральный фон для выделения изображения */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Стили для титула */
+        h1 {
+            margin: 0 0 20px 0; /* Отступ снизу от заголовка до изображения */
+            color: #2c3e50;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        /* Стили для контейнера изображения (чтобы оно было адаптивным) */
+        .image-wrapper {
+            max-width: 90%;  /* Максимальная ширина 90% от экрана */
+            max-height: 85%; /* Максимальная высота 85% от экрана */
+            text-align: center;
+        }
+
+        /* Стили для самого изображения */
+        .image-wrapper img {
+            max-width: 100%;  /* Изображение не выходит за рамки wrapper */
+            max-height: 100%; /* Изображение не выходит за рамки wrapper */
+            height: auto;     /* Сохранение пропорций */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Элегантная тень */
+            display: block;   /* Устранение артефактов строчных элементов */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Титул -->
+    <h1>English task</h1>
+
+    <!-- Обертка для изображения -->
+    <div class="image-wrapper">
+        <!-- Само изображение -->
+        <img src="watermarked_img_16650697450188342905.jpg" alt="English task">
+    </div>
+
+</body>
+</html>
